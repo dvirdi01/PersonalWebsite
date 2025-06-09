@@ -10,11 +10,11 @@ const Hero = () => {
 
 
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center">
+    <div style={{ fontFamily: "Nimbus Mono, monospace" }} className=" relative w-full min-h-screen flex items-center justify-center">
         <div className="absolute top-0 left-0 w-full h-full z--1 opacity-1/2">
             <ParticlesComponent id="particles" />
         </div>
-        <div className="z-10 bg-orange-200 p-4 w-1/2 flex flex-col items-center justify-center rounded shadow-lg">
+        <div className="z-10 text-white p-4 w-1/2 flex flex-col items-center justify-center rounded shadow-lg">
             <h1 className="text-2xl font-bold mb-4">Heading</h1>
             <p>{text}</p>
         </div>
