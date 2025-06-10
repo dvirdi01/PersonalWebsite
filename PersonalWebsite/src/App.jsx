@@ -9,9 +9,12 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+    <div className='bg-'>
+       <Navbar/>
     {/* <Home/> */}
     <Work/>
+
+    </div>
     </>
   )
 }
