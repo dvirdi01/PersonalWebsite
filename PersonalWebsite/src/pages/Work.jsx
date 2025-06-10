@@ -33,7 +33,7 @@ const Work = () => {
 
   return (
     <div className='flex flex-col bg-[#0d1117] px-8 py-12 relative min-h-screen items-center justify-center'>
-         <div className="flex flex-col relative">
+         <div className="flex flex-col relative items-start">
            <div className="absolute left-[1.5rem] top-0 w-[2px] bg-yellow-500 h-full z-20" />
         {workItemsSummary.map((text, idx) => (
           <div key={idx} className="relative flex items-start gap-8 z-10">

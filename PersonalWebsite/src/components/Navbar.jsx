@@ -1,18 +1,30 @@
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
+import { Link, NavLink } from "react-router-dom";
+import CommonButton from './CommonButton';
 
 const Navbar = () => {
   return (
     <div style={{ fontFamily: "Nimbus Mono, monospace" }} className='bg-[#0d1117] w-full flex flex-row items-center justify-between space-between px-8 z-4 sticky text-white'>
         <Fade cascade damping={0.1} triggerOnce={true} duration={2000}>
-          <p> Home </p>
+          <Link to="/">
+            <p> Home </p>
+          </Link>
           <ul className='flex flex-row space-between gap-5 p-4 '>
+            <Link to="/about-me">
             <li> About Me </li>
-            <li> Work</li>
+            </Link>
+            <Link to="/work">
+            <li> Work </li>
+            </Link>
+            <Link to="/projects">
             <li> Projects </li>
+            </Link>
+            <Link to="/contact">
             <li> Contact </li>
+            </Link>
           </ul>
-          <button> Resume</button>
+           <CommonButton label="Resume"/>
         </Fade>
     </div>
   )
