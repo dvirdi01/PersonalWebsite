@@ -5,6 +5,7 @@ import ParticlesComponent from "./Particles";
 import { LuMouse } from "react-icons/lu";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import CustomButton from "./CustomButton";
+import { Fade } from "react-awesome-reveal";
 
 
 
@@ -20,9 +21,15 @@ const Hero = () => {
             <ParticlesComponent id="particles" />
         </div>
         <div className="z-10 text-white p-4 w-1/2 flex flex-col items-center justify-center rounded p-24">
-            <h1 className="text-2xl font-bold mb-10">Hey there! I'm Divjot Virdi</h1>
-            <p className="mb-10">{text}</p>
-            <CustomButton/>
+            <Fade direction = "down" triggerOnce={true} duration={2000}>
+              <h1 className="text-2xl font-bold mb-10">Hey there! I'm Divjot Virdi</h1>
+            </Fade>
+            <Fade triggerOnce={true} duration={2000}>
+              <p className="mb-10">{text}</p>
+            </Fade>
+            <Fade direction = "up" triggerOnce={true} duration={2000}>
+              <CustomButton/>
+            </Fade>
         </div>
     </div>
   );
