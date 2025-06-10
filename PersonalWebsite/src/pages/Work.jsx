@@ -1,6 +1,9 @@
 import React from 'react'
 import WorkCard from '../components/WorkCard'
 import LinkedInHeadshot from '../assets/LinkedInHeadshot.JPG'
+import JumpStart from "../assets/JumpStart2.jpeg"
+import NRC from "../assets/NRC2.jpeg"
+import CircuitStream from '../assets/circuitStream.jpg'
 import { Fade } from "react-awesome-reveal";
 
 const Work = () => {
@@ -20,6 +23,14 @@ const Work = () => {
     "Supported 27 first-year students as a UBC Orientation Leader by fostering community and connection. Helped run events, lead group activities, and provide peer support during their transition to university life."
   ];
 
+  const images = [
+    LinkedInHeadshot, 
+    CircuitStream, 
+    LinkedInHeadshot, 
+    NRC, 
+    JumpStart
+  ];
+
   return (
     <div className='flex flex-col relative min-h-screen'>
         {workItemsSummary.map((text, idx) => (
@@ -30,7 +41,7 @@ const Work = () => {
           triggerOnce
         >
           <div>
-            <WorkCard title = "Co-op Student" date = "2023-2025" text={text} fullText={workItems[idx]} image={LinkedInHeadshot} />
+            <WorkCard title = "Co-op Student" date = "2023-2025" text={text} fullText={workItems[idx]} image={images[idx]} />
           </div>
         </Fade>
       ))}
