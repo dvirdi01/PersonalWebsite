@@ -3,16 +3,24 @@ import GitHub from '../assets/image.png'
 
 const ProjectCard = ({title, description, image, link}) => {
   return (
-     <div className='w-80 backdrop-blur-md bg-white/5 border border-white/20 border border-gray-200 rounded-lg shadow-sm flex flex-col items-start justify-center'>
-        <img className='object-cover h-64 w-full rounded-t-lg ' src = {image}></img>
-        <div className='bg-white w-full text-black'>
-            <h1 className='py-2 text-2xl font-bold tracking-tight text-[#4E4FEB] px-5'>{title}</h1>
-            <p class="mb-3 font-normal px-5">{description}</p>
-            <div className='px-5 mb-5'>
-                <button className='px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800'>Check it Out</button>
-            </div>
-
-        </div>
+     <div className="w-80 rounded-xl p-1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+      <img
+        src={image}
+        alt={title}
+        className="h-48 w-full object-cover rounded-lg"
+      />
+      <div className="p-4 text-[#F7E2C7]">
+        <h1 className="text-2xl font-semibold mb-2 text-[#F7E2C7]">{title}</h1>
+        <p className="text-sm text-[#F7E2C7] mb-4">{description}</p>
+        <a 
+  href={link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-4 py-2 text-sm font-medium text-[#578e87] bg-[#F7E2C7] rounded-md shadow-md hover:bg-[#f1d8bc] transition-colors duration-200"
+>
+  Check it Out
+</a>
+      </div>
     </div>
   )
 }

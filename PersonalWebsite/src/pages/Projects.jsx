@@ -11,7 +11,7 @@ const Projects = () => {
 
    return (
     <div className='px-24 py-12 min-h-screen'>
-        <div className='grid grid-cols-3 gap-8'>
+        <div className='grid grid-cols-4 gap-5'>
         <ProjectCard title = "Telephone Hut" description="lorem ipsum shjsn jssnjksn  jsjsknajnj " image = {TelephoneHut} link = "haha"/>
         <ProjectCard title = "Water Potability Predictor" description="lorem ipsum shjsn jssnjksn  jsjsknajnj " image = {Water} link = "haha"/>
         <ProjectCard title = "Chico" description="lorem ipsum shjsn jssnjksn  jsjsknajnj " image = {Chico} link = "haha"/>
