@@ -15,7 +15,7 @@ const WorkCard = ({title, date, text, fullText, image}) => {
 
   return (
     <div
-    className={`bg-[#0d1117] w-full px-8 py-12 flex flex-row items-center justify-center text-white z-10 items-start transition-all duration-500 ease-in-out`}
+    className={`w-full px-8 py-12 flex flex-row items-center justify-center text-white z-10 items-start transition-all duration-500 ease-in-out`}
      onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
   >

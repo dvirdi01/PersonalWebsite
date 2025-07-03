@@ -32,14 +32,14 @@ const Work = () => {
   ];
 
   return (
-    <div className='flex flex-col bg-[#0d1117] px-8 py-12 relative min-h-screen items-center justify-center'>
+    <div className='flex flex-col px-8 py-12 relative min-h-screen items-center justify-center'>
          <div className="flex flex-col relative items-start">
-           <div className="absolute left-[1.5rem] top-0 w-[2px] bg-yellow-500 h-full z-20" />
+           <div className="absolute left-[1.5rem] top-0 w-[2px] bg-[#f7e2c7] h-full z-20" />
         {workItemsSummary.map((text, idx) => (
           <div key={idx} className="relative flex items-start gap-8 z-10">
             {/* Dot */}
             <div className="w-12 flex items-center justify-center">
-              <div className="w-4 h-4 bg-yellow-400 rounded-full" />
+              <div className="w-4 h-4 bg-[#f7e2c7] rounded-full" />
             </div>
 
             {/* Animated Card */}

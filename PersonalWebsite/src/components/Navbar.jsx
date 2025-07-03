@@ -2,10 +2,11 @@ import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import { Link, NavLink } from "react-router-dom";
 import CommonButton from './CommonButton';
+import "@fontsource/fira-code";
 
 const Navbar = () => {
   return (
-    <div style={{ fontFamily: "Nimbus Mono, monospace" }} className='bg-[#0d1117] w-full flex flex-row items-center justify-between space-between px-8 z-4 sticky text-white'>
+    <div style={{ fontFamily: "Fira Code, monospace" }} className='bg-[#578E87] w-full flex flex-row items-center justify-between space-between px-8 z-4 sticky text-[#f7e2c7]'>
         <Fade cascade damping={0.1} triggerOnce={true} duration={2000}>
           <Link to="/">
             <p> Home </p>

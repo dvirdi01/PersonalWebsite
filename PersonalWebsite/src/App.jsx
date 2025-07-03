@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <div className='bg-[#333333]'>
+    <div className='bg-[#578E87]'>
        <BrowserRouter>
        <Navbar/>
         <Routes>

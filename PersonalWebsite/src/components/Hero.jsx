@@ -16,11 +16,11 @@ const Hero = () => {
 
 
   return (
-    <div style={{ fontFamily: "Nimbus Mono, monospace" }} className="w-full flex flex-col items-center justify-center">
+    <div style={{ fontFamily: "Fira Code, monospace" }} className="w-full flex flex-col items-center justify-center">
         <div className="absolute top-0 left-0 w-full h-full z--1 opacity-1/2">
-            <ParticlesComponent id="particles" />
+            {/* <ParticlesComponent id="particles" /> */}
         </div>
-        <div className="z-10 text-white p-4 w-1/2 flex flex-col items-center justify-center rounded p-24">
+        <div className="z-10 text-[#f7e2c7] p-4 w-1/2 flex flex-col items-center justify-center rounded p-24">
             <Fade direction = "down" triggerOnce={true} duration={2000}>
               <h1 className="text-2xl font-bold mb-10">Hey there! I'm Divjot Virdi</h1>
             </Fade>
