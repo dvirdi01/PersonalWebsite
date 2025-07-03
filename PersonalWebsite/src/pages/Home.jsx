@@ -1,10 +1,11 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div>
-        <Hero/>
+    <div className='min-h-screen'>
+        <Hero />
     </div>
   )
 }

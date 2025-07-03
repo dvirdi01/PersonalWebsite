@@ -28,7 +28,7 @@ const Hero = () => {
               <p className="mb-10">{text}</p>
             </Fade>
             <Fade direction = "up" triggerOnce={true} duration={2000}>
-              <CustomButton/>
+              <CustomButton />
             </Fade>
         </div>
     </div>
